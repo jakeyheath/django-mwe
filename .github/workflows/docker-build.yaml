@@ -11,6 +11,8 @@ on:
 
 jobs:
   argus_builder:
+    permissions:
+      id-token: write
     uses: chanzuckerberg/github-actions/.github/workflows/argus-docker-build.yaml@v2.6.0
     secrets: inherit
     with:
